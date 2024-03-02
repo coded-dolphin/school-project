@@ -1,0 +1,167 @@
+body {
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins";
+}
+
+* {
+  margin: 0;
+  font-family: "Poppins";
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+.signup_container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.left {
+  height: 100%;
+  width: 60%;
+  background-color: #060607;
+  /* background-color: #a2192b; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5rem;
+  padding: 5rem;
+}
+
+.left h2 {
+  font-size: 3rem;
+  text-transform: capitalize;
+  letter-spacing: 5px;
+}
+
+.left span {
+  color: #a2192b;
+}
+
+.left form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.field input {
+  outline: none;
+  border: 1px #fff solid;
+  height: 3rem;
+  padding: 0.2rem 10px;
+  position: relative;
+  font-size: 1.2rem;
+  background: none;
+  color: #fff;
+  width: 25rem;
+}
+
+.right {
+  height: 100%;
+  width: 40%;
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.77) 40%,
+      rgba(0, 0, 0, 0.856)
+    ),
+    url(../image/login123.png);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background-size: cover;
+  background-position: center;
+  /* background-color: #e61e39; */
+}
+
+.right::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: #271a1a58;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.signUp {
+  padding-block: 1rem;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: #a2192b;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s;
+  outline: none;
+}
+
+.signUp:hover {
+  background-color: #fff;
+  color: #060607;
+}
+
+button.back {
+  position: absolute;
+  top: 6rem;
+  left: 2.4rem;
+  z-index: 999;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.field {
+  position: relative;
+}
+
+.field label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #fff;
+  font-size: 1.3rem;
+  pointer-events: none;
+  transition: all 0.2s;
+}
+
+.field input:focus + label,
+.field input:not(:placeholder-shown) + label {
+  transform: translate(0px, -32px);
+  background-color: #060607;
+}
+
+.error p {
+  background-color: #a2192b58;
+  color: red;
+  padding-block: 0.5rem;
+  padding-inline: 0.5rem;
+}
+
+.error p.sucess {
+  background-color: rgba(54, 143, 54, 0.499);
+  color: rgb(70, 241, 70);
+}
+
+button.remove-button-for-login-page {
+  display: none;
+}
+
+.redirect {
+  color: #a2192b;
+  text-transform: capitalize;
+}

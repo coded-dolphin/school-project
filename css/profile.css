@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.profile-container {
+  height: 80%;
+  width: 80%;
+  background-color: #111111;
+  border-radius: 10px;
+  display: flex;
+}
+
+.right {
+  width: 75%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.right h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  font-family: "Playfair Display";
+  color: #d1bcbc;
+}
+
+.left {
+  width: 25%;
+  height: 100%;
+  background-color: #19191a;
+  border-radius: 10px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.left .top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 30%;
+}
+
+.left .middle {
+  height: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left .bottom {
+  height: 60%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-overflow: hidden;
+  overflow: hidden;
+}
+
+.left .logout {
+  height: 5%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left .logout a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 400;
+  background-color: #111111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  padding: 1rem;
+  transform: scale(1);
+  transition: all 0.2s;
+}
+
+.left .logout a:hover {
+  transform: scale(1.05);
+}
+
+.left .middle h2 {
+  font-size: 2rem;
+  color: #fc3d3d;
+}
+
+.left .top img {
+  width: 12rem;
+  border-radius: 50%;
+}
